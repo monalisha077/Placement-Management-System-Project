@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Placement</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="Trident Academy of Technology">
+ <meta name="author" content="Monalisa">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="javascript/js.js="></script>
+<style>
+  
+</style>
+</head>
+<body class="body">
+<header class="mainheader">
+	<img src="images/logo1.png">
+	<content id="search">
+		<form>
+  <input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
+</form>
+	</content>
+	<nav>
+		<ul>
+			
+			<li><a href="index.html">Home</a></li>
+			<li><a href="studentdata.html">Student Data</a></li>
+			<li><a href="placement.html">Placement</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="login.html">Login</a></li>
+			
+			
+		</ul> 
+	</nav>
+  </header><br>
+  <a href="deparment.html">The Department</a> | 
+  <a href="alumni.html">Alumni Mentoring</a>  | 
+  <a href="statistics.html">Placement statistics</a>
+  <br><br><hr>
+  <div class="slideshow-container">
+  
+  <div class="iambrpslides fade">
+    <div class="numbertext">01 / 03</div>
+    <img src="./images/slide5.png">
+   </div>
+  
+  <div class="iambrpslides fade">
+    <div class="numbertext">02 / 03</div>
+    <img src="./images/slide2.png">
+    </div>
+  
+  <div class="iambrpslides fade">
+    <div class="numbertext">03 / 03</div>
+    <img src="./images/slide3.jpg">
+  </div>
+  
+  <div class="iambrpslides fade">
+    <div class="numbertext">04 / 04</div>
+    <img src="./images/Slide4.jpg">
+    </div>
+  
+  </div>
+  
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("iambrpslides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex> slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+  }
+  </script>
+  <br>
+      
+      <script type="text/javascript">
+    document.title="Placement";
+  </script>
+      
+    <footer class="mainFooter">
+    <p>Copyright © 2016 - TRIDENT ACADEMY OF TECHNOLOGY</p>
+    <center>
+    <a href="https://www.facebook.com/tridentcollege/">Facebook</a>
+    <a href="https://twitter.com/tattrident?lang=en">Twitter</a>
+    <a href="https://www.youtube.com/watch?v=3fxU0zrb4MI">Youtube</a>
+    </center>
+    
+  </footer>
+</body>
+</html>

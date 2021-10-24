@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Form</title>
+<style>
+    body{
+        background-color: goldenrod;
+    }
+</style>
+</head>
+<body>
+<a href="viewusers.jsp">View All Records</a><br/>  
+  
+
+<form action="adduser.jsp" method="post">    
+  
+ <center><h1>Add New Data</h1> </center>  
+<form action="adduser.jsp" method="post">  
+<center> <table>  
+<tr><td>Name:</td><td><input type="text" name="name"/></td></tr> 
+<tr><td>Branch:</td><td>  <br>
+<input type="branch" name="branch"/></td></tr>
+<tr><td>Roll No:</td><td>  <br>
+<input type="rollno" name="rollno"/></td></tr>  
+<tr><td>DOB:</td><td>  <br>
+<input type="dob" name="dob"/></td></tr> 
+<tr><td>Email:</td><td> <br><input type="email" name="email"/></td></tr> 
+<tr><td>Registration No:</td><td> <br> 
+<input type="rgdno" name="regdno"/></td></tr> 
+<tr><td>Sex:</td><td>  <br>
+<input type="radio" name="sex" value="male"/>Male   
+<input type="radio" name="sex" value="female"/>Female </td></tr>
+<tr><td>Company</td><td> <br><input type="text" name="Company"/></td></tr>   
+<tr><td colspan="2"> <br><input type="submit" value="Add User"/></td></tr>  
+</table>  
+</form>
+</center>
+
+
+</body>
+</html>
